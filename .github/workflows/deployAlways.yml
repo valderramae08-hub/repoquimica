@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 📂 Sincronizando archivos via FTP
-        uses: SamKirkland/ ftp-aldrinn.alwaysdata.net
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server:  ftp-aldrinn.alwaysdata.net # Change if using another host
           username: ${{ secrets.FTP_USERNAME }}
